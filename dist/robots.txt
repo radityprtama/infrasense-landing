@@ -1,0 +1,15 @@
+# robots.txt for InfraSense
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://infrasense.io/sitemap.xml
+
+# Crawl-delay for good citizenship
+Crawl-delay: 1
+
+# Disallow irrelevant paths (if any exist)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$

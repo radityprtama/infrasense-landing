@@ -245,9 +245,9 @@ export const Hero: React.FC = () => {
                             <p className="text-sm text-gray-500">Service health restored to 100%.</p>
                           </div>
                           <div className="text-xs font-mono bg-light-bg dark:bg-dark-800 p-3 rounded text-secondary border border-secondary/20 mt-4">
-                            > Scaling complete: 5 replicas active<br/>
-                            > Memory usage stabilized at 45%<br/>
-                            > Ticket #4921 closed automatically
+                            {'>'}  Scaling complete: 5 replicas active<br/>
+                            {'>'}  Memory usage stabilized at 45%<br/>
+                            {'>'}  Ticket #4921 closed automatically
                           </div>
                           <button onClick={closeAlert} className="text-xs text-gray-500 hover:text-light-text dark:hover:text-white mt-4 underline">
                             Return to Dashboard
@@ -282,9 +282,9 @@ export const Hero: React.FC = () => {
                             </div>
                             <div className="bg-black/50 p-3 rounded text-gray-400 border border-dark-700">
                               <span className="text-blue-400">log_trace:</span><br/>
-                              <span className="text-red-400">> [ERROR] Heap usage &gt; 95% (Trend: +5%/hr)</span><br/>
-                              > [WARN] GC thrashing detected in pod-8xf<br/>
-                              > [REC] Restart pod & rollback to v2.4.0
+                              <span className="text-red-400">{'>'} [ERROR] Heap usage &gt; 95% (Trend: +5%/hr)</span><br/>
+                              {'>'}  [WARN] GC thrashing detected in pod-8xf<br/>
+                              {'>'}  [REC] Restart pod & rollback to v2.4.0
                             </div>
                           </div>
                         </div>

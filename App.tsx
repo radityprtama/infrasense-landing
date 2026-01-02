@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { LandingPage } from './pages/LandingPage';
 import { DemoRequest } from './pages/DemoRequest';
+import { PricingPage } from './pages/PricingPage';
 
 // ScrollToTop component to handle scrolling on route change
 const ScrollToTop = () => {
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/demo" element={<DemoRequest />} />
+          <Route path="/pricing" element={<PricingPage />} />
           {/* Catch-all route to redirect any unknown paths to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
